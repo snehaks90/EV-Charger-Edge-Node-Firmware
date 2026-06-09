@@ -82,7 +82,8 @@ ERROR: Sensor Read Failed. Using Last Known Good Value.
 ## Wokwi Simulation
 
 The repository includes the `diagram.json` file required to run the simulation in Wokwi.
-
+Wokwi Project Link:
+https://wokwi.com/projects/466357819558615041
 ---
 ## AI Tool Usage
 
@@ -93,6 +94,7 @@ Specifically, it was used to:
 * Review and improve the structure and presentation of the design document and README.
 * Discuss ESP32 TWAI (CAN) communication concepts and simulation limitations in Wokwi.
 * Explain filtering techniques such as Exponential Moving Average (EMA) and their design trade-offs.
+  
 All implementation decisions, code, and project deliverables were reviewed, understood, and validated before submission.
 
 
