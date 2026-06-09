@@ -85,6 +85,21 @@ The repository includes the `diagram.json` file required to run the simulation i
 Wokwi Project Link:
 https://wokwi.com/projects/466357819558615041
 ---
+
+## Limitations
+
+The CAN payload structure, frame packing logic, and fault flag encoding were implemented and verified through UART output.
+
+Attempts were made to verify ESP32 TWAI communication using simulation environments including Wokwi and PlatformIO. However, full CAN/TWAI communication testing requires either:
+
+* A simulator with complete CAN/TWAI support and a second CAN node, or
+* Physical CAN hardware (ESP32 with a CAN transceiver module and a second CAN device).
+
+As the project was completed using simulation only and no external CAN hardware was available, actual bus-level CAN transmission and reception could not be fully verified.
+The implementation therefore focuses on CAN message generation, payload packing, fault reporting, and communication logic, which can be integrated with physical CAN hardware for complete validation.
+
+---
+
 ## AI Tool Usage
 
 ChatGPT and Claude AI was used as a supporting tool for documentation review, clarification of embedded systems concepts, and discussion of implementation approaches during development.
